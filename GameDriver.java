@@ -20,7 +20,7 @@ for(int i = 0; i < 3; i++)
 //shows the moves for the player first
 //makes moves until the game is over and prints the name of the winner or says draw if it is a draw
 //I think the scanner that creates the players and gets the names should be in the constructor for ttt though I think I could do that part here as well
- while(state.isGameOver()==false)
+ while(state.isGameOver()=false)
  {
      state.makeMove(state.getCurrentPlayer().getNextMove(state));
       if(state.isGameOver()==true)
