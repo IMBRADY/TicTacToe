@@ -22,11 +22,6 @@ for(int i = 0; i < 3; i++)
 //I think the scanner that creates the players and gets the names should be in the constructor for ttt though I think I could do that part here as well
  while(state.isGameOver()==false)
  {
-    System.out.println(state.getCurrentPlayer().getName() + “ choose one of the following moves!”);
-   for(int c = 0; c < state.getCurrentMoves().size();c++)
-  { 
-   System.out.print(state.getCurrentMoves().get(c)+” “);
-  }
      state.makeMove(state.getCurrentPlayer().getNextMove(state));
       if(state.isGameOver()==true)
      {
