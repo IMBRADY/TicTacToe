@@ -1,4 +1,6 @@
-public class GameDriver
+import pkg.*;
+
+public class GameDriver implements InputControl, InputKeyControl
 {
     private GameState state;
     public GameDriver(GameState initial)
